@@ -1,0 +1,16 @@
+REGISTRO
+
+    $_SESSION['errores'] = $errores; =>[nombre],[apellidos],[password],[email]
+    $_SESSION['register_ok'] = "Registo completado con exito.";
+    $_SESSION['errores']['registro'] = "Error en el registro de usuarios";
+
+
+LOGIN
+
+limpiar error => $_SESSION['error_login']  --> unset
+
+
+    $_SESSION['usuario'] = $usuario;-------------->$usuario = mysqli_fetch_assoc($result);
+    
+    $_SESSION['error_login'] = "Login incorrecto, contraseña incorrecta";
+    $_SESSION['error_login'] = "Login incorrecto, email incorrecto comprueba tu email o registrate";
